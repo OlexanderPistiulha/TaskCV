@@ -13,13 +13,16 @@
     }
 
 }
+// -------------------------------------------first-screen-------------------------------------------
+
+
 
 
 
 
 // -------------------------------------------second-screen-------------------------------------------
 
-.second-screen-wrapp {
+.second-screen {
     padding: 50px 0;
 }
 
@@ -72,7 +75,7 @@
 
 
     &__item {
-        width: 300px;
+        width: 350px;
         margin: 30px 0;
 
         &:first-child {
@@ -169,5 +172,14 @@
 
     &__icon-img {}
 
-    &__text {}
+    &__text {
+        font-size: 22px;
+        font-weight: 400;
+        color: #444444
+    }
+
+    &__text span {
+        font-weight: 500;
+        color: #000000;
+    }
 }
