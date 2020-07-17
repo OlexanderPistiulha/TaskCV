@@ -11,7 +11,7 @@
 
 
     @media screen and (max-width: 500px) {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
 }
@@ -29,7 +29,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 20%;
-    margin-bottom: 77px;
+    //margin-bottom: 77px;
 
 
     @media screen and (max-width: 1200px) {
@@ -40,9 +40,13 @@
     &__body {
         min-height: 100vh;
         display: flex;
-        flex-direction: column;
-        //justify-content: center;
         max-width: 1530px;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
     }
 
@@ -51,11 +55,11 @@
 
 
         @media screen and (max-width: 1200px) {
-            // display: flex;
-            // height: 100vh;
-            // justify-content: center;
-            // flex-direction: column;
-            width: 0;
+            width: 67%;
+        }
+
+        @media screen and (max-width: 710px) {
+            width: 100%;
         }
     }
 
@@ -76,7 +80,7 @@
         }
 
         @media screen and (max-width: 1200px) {
-            display: none;
+            height: 80vh;
         }
     }
 
@@ -101,6 +105,11 @@
 
         @media screen and (max-width: 1200px) {
             width: 100%;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 710px) {
+            flex-direction: column;
 
         }
     }
@@ -110,6 +119,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media screen and (max-width: 710px) {
+            width: 100%;
+
+        }
     }
 
     &__tittle {
@@ -131,11 +145,20 @@
         @media screen and (max-width: 1200px) {
             width: 95%;
         }
+
+        @media screen and (max-width: 710px) {
+            text-align: center;
+            font-size: 30px;
+        }
     }
 
     &__text-line {
         font-size: 34px;
         font-weight: 700;
+
+        @media screen and (max-width: 710px) {
+            font-size: 24px;
+        }
     }
 
     &__inside {
@@ -153,6 +176,14 @@
         height: 607px;
         border: 7px solid #a8ca3f;
         border-radius: 15.0px;
+
+        @media screen and (max-width: 1200px) {
+            width: 300px
+        }
+
+        @media screen and (max-width: 350px) {
+            width: 254px
+        }
     }
 }
 
@@ -168,8 +199,7 @@
 
     @media screen and (max-width: 1200px) {
         width: 95%;
-        left: 0;
-        // position: none;
+        right: 0;
     }
 
     @media screen and (max-width: 900px) {
@@ -198,9 +228,16 @@
         justify-content: space-between;
         align-items: center;
 
+
         @media screen and (max-width: 900px) {
             margin-top: 20px;
             justify-content: center;
+        }
+
+
+        @media screen and (max-width: 710px) {
+            flex-wrap: wrap;
+            margin-top: 10px;
         }
     }
 
@@ -208,6 +245,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 20px;
+
+        @media screen and (max-width: 710px) {
+
+            margin-top: 10px;
+        }
     }
 
     &__item-img {
@@ -298,6 +341,15 @@
     background-color: #ffffff;
     border-radius: 15.0px;
 
+    &__arrow {
+        position: absolute;
+        top: 55%;
+        right: -32px;
+        transform: translateY(-50%);
+    }
+
+    &__arrow-img {}
+
     &__main-content {
         padding: 18px;
         text-align: center;
@@ -325,7 +377,7 @@
     &__price-wrapp {
         margin-bottom: 15px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -344,6 +396,10 @@
         color: #000000;
         position: relative;
         padding: 7px;
+
+        @media screen and (max-width: 350px) {
+            font-size: 25px;
+        }
 
     }
 
@@ -388,6 +444,11 @@
         background-image: linear-gradient(90.0deg, #ffbc02 0%, #ffce02 100%);
         border-radius: 5.0px;
         padding: 7px;
+
+        @media screen and (max-width: 350px) {
+            font-size: 25px;
+        }
+
     }
 
     &__field {}
@@ -412,7 +473,7 @@
     &__input-img {
         position: absolute;
         top: 50%;
-        left: 12%;
+        left: 8%;
         transform: translateY(-68%);
     }
 
@@ -467,7 +528,7 @@
         bottom: 0;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: #eef2f7;
         border-radius: 0 0 10px 10px;
