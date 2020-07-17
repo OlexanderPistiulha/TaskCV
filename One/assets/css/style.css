@@ -35,7 +35,6 @@ button {
 }
 
 .first-screen {
-  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,13 +60,15 @@ button {
 }
 
 .first-screen__body {
-  -ms-flex-item-align: center;
-      align-self: center;
-  max-width: 1530px;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1530px;
 }
 
 .first-screen__left {
