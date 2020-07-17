@@ -242,6 +242,7 @@ button {
   height: 607px;
   border: 7px solid #a8ca3f;
   border-radius: 15.0px;
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
@@ -254,6 +255,16 @@ button {
   .first-screen__form-wrapp {
     width: 254px;
   }
+}
+
+.first-screen__form-head {
+  position: absolute;
+  top: -3.5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+  background-color: #f3f9ff;
 }
 
 .header {
